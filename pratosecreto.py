@@ -39,7 +39,8 @@ for tentativas in range(1,max_tentativas+1):
         acertou = True
         break
     else:
-        tentativas_restantes = max_tentativas - 1
+        tentativas_restantes = max_tentativas - tentativas
+        
         if tentativas_restantes>0:
             print(f"Tentativa incorreta, não desita! Ainda restam {tentativas_restantes}")
         else:
